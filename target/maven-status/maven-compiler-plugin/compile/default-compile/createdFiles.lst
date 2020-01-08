@@ -1,0 +1,6 @@
+com\gmail\sharafan\servlets\AddServlet.class
+com\gmail\sharafan\servlets\ListServlet.class
+com\gmail\sharafan\entities\PersonUser.class
+com\gmail\sharafan\model\Model.class
+com\gmail\sharafan\servlets\HellopageServlet.class
+com\gmail\sharafan\MainServlet.class
