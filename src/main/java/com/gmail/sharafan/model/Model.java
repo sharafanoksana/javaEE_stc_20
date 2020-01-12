@@ -22,9 +22,11 @@ public class Model {
     public Model() {
         model = new ArrayList<PersonUser>();
     }
+
     public void add (PersonUser personUser){
         model.add(personUser);
     }
+
     public List<String> list(){
         return model.stream()
                 .map(PersonUser::getName)

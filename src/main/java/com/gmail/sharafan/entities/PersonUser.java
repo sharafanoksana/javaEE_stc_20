@@ -5,22 +5,40 @@
  */
 package com.gmail.sharafan.entities;
 
+import org.apache.commons.codec.digest.DigestUtils;
+
 import java.util.Objects;
 
 public class PersonUser {
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String name;
     private String password;
 
-    public PersonUser() {
+    public PersonUser(int anInt, String string, String resultSetString) {
     }
 
     public PersonUser(String name, String password) {
         this.name = name;
-        this.password = password;
+        this.password = md5Apache(password);
     }
 
     public String getName() {
         return name;
+    }
+
+    public static String md5Apache(String st) {
+        String md5Hex = DigestUtils.md5Hex(st);
+
+        return md5Hex;
     }
 
     public void setName(String name) {
@@ -30,9 +48,8 @@ public class PersonUser {
     public String getPassword() {
         return password;
     }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setKey(int id) {
+        this.id = id;
     }
 
     @Override

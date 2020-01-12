@@ -27,7 +27,7 @@ public class MainServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("login");
         String password = req.getParameter("password");
-        PrintWriter writer = resp.getWriter();
+       // PrintWriter writer = resp.getWriter();
         if (username.equals("oksana") & password.equals("sharafan")) {
 //            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/hellopage.jsp");
 //            requestDispatcher.forward(req, resp);
